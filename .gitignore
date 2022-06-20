@@ -11,7 +11,7 @@
 # CONFIGURATIONS
 /src/firebase.js
 
-# /.firebase
+/.firebase
 # /.github
 
 # productions
