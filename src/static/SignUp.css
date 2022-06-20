@@ -1,0 +1,21 @@
+.app__signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .model__style{
+    position: absolute ;
+    top : 50%; 
+    left : 50%; 
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #000;
+    box-shadow: 5px;
+    padding : 10px 10px 30px;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+  }

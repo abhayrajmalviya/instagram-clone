@@ -1,0 +1,43 @@
+.imageupload{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+}
+
+.imageupload__progress{
+    width:100%;
+    margin-bottom: 10px;
+}
+.imageupload__caption{
+    margin-bottom: 20px;
+}
+.imageupload__model{
+    position: absolute ;
+    top : 50%; 
+    left : 50%; 
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #000;
+    box-shadow: 5px;
+    padding : 40px 10px 30px;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.imageupload__button{
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .imageupload__model{
+        position: absolute ;
+        top : 50%; 
+        left : 50%; 
+        width:50%;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid #000;
+        box-shadow: 5px;
+        padding : 40px 10px 30px;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+    }
+  }

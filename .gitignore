@@ -8,7 +8,13 @@
 # testing
 /coverage
 
-# production
+# CONFIGURATIONS
+/src/firebase.js
+
+/.firebase
+# /.github
+
+# productions
 /build
 
 # misc
