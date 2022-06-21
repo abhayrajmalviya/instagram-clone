@@ -1,5 +1,6 @@
 import { Button, Input, Modal } from '@mui/material'
 import React, { useState } from 'react'
+import styled from 'styled-components';
 import { auth } from '../firebase';
 import '../static/SignUp.css'
 
@@ -63,9 +64,15 @@ function SignUp() {
         </div>
       </Modal>
    
-      <Button onClick={() => setOpen(true)}>SignUp</Button>
+      <SignUpButton onClick={() => setOpen(true)}>SignUp</SignUpButton>
     </div>
   )
 }
 
+const SignUpButton = styled(Button)`
+  :hover{
+    color : red;
+    border-radius : 10px;       
+  }
+`
 export default SignUp

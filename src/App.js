@@ -6,6 +6,7 @@ import { useState , useEffect } from 'react';
 import { db , auth} from './firebase';
 import { Button } from '@mui/material';
 import ImageUpload from './components/ImageUpload';
+import Header, {user} from './components/Header';
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
     const unsubscribe =auth.onAuthStateChanged((authUser)=>{
       if (authUser){
         //user has logged in
-        console.log(authUser);
+        // console.log(authUser);
         setUser(authUser);
       }
       else{
@@ -43,38 +44,7 @@ function App() {
 
   return (
     <div className="app">
-
-      {/* app header */}
-      <div className="app__header">
-        <img 
-          className="app_headerImage" 
-          src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png" 
-          alt="" 
-        />
-
-        {
-          user ? (
-            <div className="app__loginContainer">
-              <ImageUpload username={user.displayName}/>
-              <Button 
-                onClick={() => {
-                  auth.signOut() ;
-                  setUser(null);
-                }}
-              > 
-                Logout
-              </Button>
-          </div>
-          ):(
-            <div className="app__loginContainer">
-              <SignUp/>
-              <SignIn/>
-            </div>
-          )
-        } 
-        
-      </div>
-
+      <Header/>
       {/* post components */}
 
       <div className='app__posts'>

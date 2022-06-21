@@ -1,9 +1,13 @@
-import { Button, Input, Modal } from '@mui/material'
+import { Button, IconButton, Input, Modal } from '@mui/material'
 import React ,{useState} from 'react'
 import {db, storage} from '../firebase.js'
 import firebase from 'firebase/compat/app';
 import "firebase/compat/firestore"
 import '../static/ImageUpload.css'
+import CloudUploadOutlinedIcon from '@mui/icons-material/CloudUploadOutlined';
+import styled from 'styled-components';
+import PhotoCamera from '@mui/icons-material/PhotoCamera';
+
 
 function ImageUpload({username}) {
     const [caption, setCaption]= useState('');
@@ -72,15 +76,27 @@ function ImageUpload({username}) {
                 <Input type="text" className='imageupload__caption' id = "captionCaptureInputFile" placeholder = "Enter your Caption..." onChange={e=>setCaption(e.target.value)}/>
                 <Input type="file" id = "uploadCaptureInputFile" onChange= {handleChange}/>
                 <Button onClick={handleUpload}  className='imageupload__button'>
-                    upload
+                    UPLOAD
                 </Button>
              </div>
         </div>
       </Modal>
-      <Button className='imageupload__modelbutton' onClick={() => setOpenUpload(true)}>Upload Photo</Button>
+        <UploadButton className='imageupload__modelbutton' onClick={() => setOpenUpload(true)}>
+            <PhotoCamera />  
+            <span>Upload</span>
+        </UploadButton> 
     </div>
     
   )
 }
 
+
+
+const UploadButton = styled(Button)`
+
+    :hover{
+        color : red;
+        border-radius : 10px;       
+    }
+`
 export default ImageUpload ;
