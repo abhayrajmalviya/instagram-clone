@@ -1,12 +1,8 @@
 import './static/App.css';
 import Post from './components/Post';
-import SignIn from './components/SignIn'
-import SignUp from './components/SignUp'
 import { useState , useEffect } from 'react';
 import { db , auth} from './firebase';
-import { Button } from '@mui/material';
-import ImageUpload from './components/ImageUpload';
-import Header, {user} from './components/Header';
+import Header from './components/Header';
 
 
 function App() {

@@ -1,5 +1,27 @@
-# IT IS AN INSTAGRAM CLONE WEB APPLICATION BUILD WITH REACT JS !
+# Instagram Clone - InstaBam
+This is Instagram Clone built with Reactjs and Firebase.
 
-## COMMANDS TO RUN THE PROJECT
+Components used
+- react hooks
+- firebase
+  - for authentication
+  - for database
+- Material UI Icons
+- Material UI Modal
 
-- **npm start** - To start your npm server at https://localhost:3000/
+#### check out the live version of application [here](https://instagram-clone-react-dd853.web.app/)
+
+![DEMO IMAGE|700](https://github.com/abhayrajmalviya/GmailClone/blob/main/demo.png)
+
+
+# IMP commands
+
+- npm start : to start the local server
+- npm install <package name> : to nstall the particular package
+- npm install : to install all the required package mentioned in package.json
+  
+## commands for deployment
+- firebase login
+- firebase init
+- firebase deploy
+

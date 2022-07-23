@@ -1,10 +1,9 @@
-import { Button, IconButton, Input, Modal } from '@mui/material'
+import { Button, Input, Modal } from '@mui/material'
 import React ,{useState} from 'react'
 import {db, storage} from '../firebase.js'
 import firebase from 'firebase/compat/app';
 import "firebase/compat/firestore"
 import '../static/ImageUpload.css'
-import CloudUploadOutlinedIcon from '@mui/icons-material/CloudUploadOutlined';
 import styled from 'styled-components';
 import PhotoCamera from '@mui/icons-material/PhotoCamera';
 

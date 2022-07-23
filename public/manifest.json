@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "InstagBam",
+  "name": "InstaBam - the insta clone",
   "icons": [
     {
       "src": "favicon.ico",
