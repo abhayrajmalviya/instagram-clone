@@ -11,7 +11,7 @@ Components used
 
 #### check out the live version of application [here](https://instagram-clone-react-dd853.web.app/)
 
-![DEMO IMAGE|700](https://github.com/abhayrajmalviya/GmailClone/blob/main/demo.png)
+![DEMO IMAGE|700](https://github.com/abhayrajmalviya/instagram-clone/blob/main/demo.png)
 
 
 # IMP commands
